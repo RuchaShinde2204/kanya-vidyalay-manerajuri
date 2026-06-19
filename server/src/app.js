@@ -16,7 +16,7 @@ const app = express();
 app.use(helmet());
 app.use(
   cors({
-    origin: process.env.CLIENT_URL?.split(",") || "http://localhost:5173","https://kanya-vidyalay-manerajuri.vercel.app",
+    origin: process.env.CLIENT_URL?.split(",") ||"https://kanya-vidyalay-manerajuri.vercel.app",
     credentials: true
   })
 );
